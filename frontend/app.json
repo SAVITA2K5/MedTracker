@@ -1,0 +1,42 @@
+{
+    "expo": {
+        "name": "MEDTRACK",
+        "slug": "medtrack",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "userInterfaceStyle": "dark",
+        "splash": {
+            "backgroundColor": "#0A1628"
+        },
+        "assetBundlePatterns": [
+            "**/*"
+        ],
+        "ios": {
+            "supportsTablet": false,
+            "bundleIdentifier": "com.medtrack.guardian"
+        },
+        "android": {
+            "adaptiveIcon": {
+                "backgroundColor": "#0A1628"
+            },
+            "package": "com.medtrack.guardian",
+            "permissions": [
+                "ACCESS_FINE_LOCATION",
+                "ACCESS_COARSE_LOCATION",
+                "VIBRATE"
+            ]
+        },
+        "web": {
+            "favicon": "./assets/favicon.png"
+        },
+        "plugins": [
+            [
+                "expo-location",
+                {
+                    "locationAlwaysAndWhenInUsePermission": "Allow MEDTRACK to access your location for SOS alerts."
+                }
+            ]
+        ]
+    }
+}
